@@ -1,86 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galería de Arte - Galería</title>
-<style>
-    h1{
-		color: whitesmoke;
-		background: darkseagreen;
-		font-family: 'Segoe UI';
-    }
-    a{
-		color: blueviolet;
-		background: transparent;
-		font-style: bold;
-		font-size: 20px;
-		font-family: 'Segoe UI';
-		text-decoration: none;
-		text-align: left;
-    }
-    #galeria{
-		color: black;
-		background: powderblue;
-		font-style: normal;
-		font-size: 20px;
-		font-family: 'Segoe UI';
-		text-decoration: none;
-		text-align: left;
-    }
-    .grid{
-		display: grid;
-		grid-template-columns: 2fr 2fr;
-		gap: 20px;
-		padding: 20px;
-		margin: 0 auto;
-    }
-</style>
+    <meta charset="UTF-8">
+    <title>Galería de Arte - Galería</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+		body {
+			background-image: url('imgs/cuevas_altamira.jpg');
+			background-position: center;
+			color: white;
+			display: flex;
+            flex-direction: column;
+            height: 100vh;
+        
+        }
+		nav a.activo {
+			color: white;
+			font-style: oblique;
+			background-color: blueviolet;
+			padding: 5px 10px;
+			border-radius: 5px;
+			}
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 10px;
+            margin: 0;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .imagen {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .imagen img {
+            width: 100%;
+            height: 500px;
+            border-radius: 5px;
+        }
+        .titulo_imagen {
+            margin-top: 10px;
+            font-weight: bold;
+			font-family: 'Segoe UI';
+        }
+		footer {
+			padding: 5px;
+			background: #b37d59;
+			color: #222;
+			margin-top: auto;
+		}
+		footer p {
+			text-align: right;
+			padding: 10px;
+			color: black;
+			text-shadow: #222;
+		}
+		.titulo_galeria {
+            color: whitesmoke;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            text-shadow: rgb(0, 0, 0) 11px 11px 21px;
+        }
+    </style>
 </head>
-<body style="background: powderblue">
+<body>
 	<header>
-		<h1>Nuestra Colección de Arte</h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Inicio</a></li>
-					<li><a href="galeria.html">Galería</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</header>
-<main>
-    
-<section id="galeria">
-<!-- Asegúrate de que las imágenes estén en la carpeta local -->
-<div class="grid">
-<div>
-<h2 >La mona lisa</h2>
-<img src="imgs/mona-lisa-also-called-la-gioconda-or-la-joconde-c1503-1506-news-photo-1652350725.jpg", width="300", height="300", alt="La mona lisa">
-</div>
-<div>
-<h2 >La capilla sixtina</h2>
-<img src="imgs/the-creation-of-adam-by-michelangelo-is-painted-on-the-news-photo-1652350574.jpg" , width="300", height="300", alt="La capilla sixtina">
-</div>
-<div>
-<h2 >Girl with a pearl</h2>
-<img src="imgs/the-exhibit-the-girl-with-pearl-earring-of-johannes-vermeer-news-photo-1652351890.jpg" , width="300", height="300", alt="Girl with a pearl">
-</div>
-<div>
-<h2 >Starry Night</h2>
-<img src="imgs/saint-remy-june-1889-oil-on-canvas-29-x-36-1-4-inches-news-photo-1652793304.jpg" , width="300", height="300", alt="Starry Night">
-</div>
-<div>
-<h2 >Cuevas Altamira</h2>
-<img src="imgs/cuevas-altamira-1547643201.jpg" , width="300", height="300", alt="Cuevas Altamira">
-</div>
-<div>
-<h2 >Impression, Sunrise</h2>
-<img src="imgs/impression-sunrise-by-claude-monet-paris-mus-c3-a9e-marmottan-news-photo-1652352017.jpg" , width="300", height="300", alt="Impression, Sunrise">
-</div>
-</section>
-</main>
-<footer>
-<p>&copy; 2025 Galería de Arte. Todos los derechos reservados.</p>
-</footer>
+	<nav>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a class="activo"  href="galeria.html">Galería</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</nav>
+	</header>
+	<h1 class="titulo_galeria">Obras Maestras</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="imagen">
+                    <img src="imgs/mona-lisa-also-called-la-gioconda-or-la-joconde-c1503-1506-news-photo-1652350725.jpg" alt="La Mona Lisa">
+                    <div class="titulo_imagen">La Mona Lisa</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="imagen">
+                    <img src="imgs/the-creation-of-adam-by-michelangelo-is-painted-on-the-news-photo-1652350574.jpg" alt="La Capilla Sixtina">
+                    <div class="titulo_imagen">La Capilla Sixtina</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="imagen">
+                    <img src="imgs/the-exhibit-the-girl-with-pearl-earring-of-johannes-vermeer-news-photo-1652351890.jpg" alt="Girl with a Pearl">
+                    <div class="titulo_imagen">Girl with a Pearl</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="imagen">
+                    <img src="imgs/starry.jpg" alt="Starry night">
+                    <div class="titulo_imagen">Starry Night</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Galería de Arte. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
