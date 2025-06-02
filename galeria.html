@@ -73,6 +73,7 @@
             text-shadow: rgb(0, 0, 0) 11px 11px 11px;
         }
     </style>
+    <script src="app.js"></script>
 </head>
 <body>
 	<header>
@@ -118,5 +119,26 @@
     <footer>
         <p>&copy; 2025 Galería de Arte. Todos los derechos reservados.</p>
     </footer>
+
+
+
+<div id="modalObra" class="modal d-none" style="
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+">
+    <div style="background: white; color: black; padding: 20px; border-radius: 10px; max-width: 500px; width: 90%;">
+        <h2 id="modalTitulo"></h2>
+        <img id="modalImagen" src="" alt="" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 10px;">
+        <p id="modalDescripcion"></p>
+        <button id="cerrarModal" class="btn btn-secondary mt-3">Cerrar</button>
+    </div>
+</div>
+
 </body>
 </html>
