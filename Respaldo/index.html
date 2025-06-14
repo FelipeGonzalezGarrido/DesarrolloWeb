@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Inicio</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	body {
+		background-image: url('imgs/starry.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		color: white;
+		font-family: 'Segoe UI';
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		
+	}
+	h1 {
+		color: whitesmoke;
+		padding: 20px;
+		margin: 0;
+		text-align: center;
+		text-shadow: rgb(0, 0, 0) 11px 11px 21px;
+	}
+	nav a.activo {
+		color: white;
+		background-color: blueviolet;
+		font-style: oblique;
+		padding: 5px 10px;
+		border-radius: 5px;
+		}
+	nav ul {
+		display: flex;
+		list-style: none;
+		justify-content: center;
+		padding: 10px;
+		margin: 0;
+	}
+	nav li {
+		margin: 0 15px;
+	}
+	nav a {
+		color: rgb(0, 0, 0);
+		font-size: 18px;
+		font-weight: bold;
+	}
+	footer {
+		padding: 5px;
+		background: #67bff1;
+		color: #222;
+		margin-top: auto;
+	}
+	footer p {
+		text-align: right;
+		padding: 10px;
+		color: #000000;
+		text-shadow: #222;
+	}
+	.introduccion {
+		text-align: justify;
+		padding: 20px;
+		background-color: rgba(2, 2, 2, 0.6);
+		border-radius: 10px;
+		margin: 20px;
+		margin-top: 20vh;
+		max-width: 60vh;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+    </style>
+
+
+
+</head>
+<body>
+	<header>
+        <nav>
+            <ul>
+                <li><a class="activo" href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+	</header>
+	<h1 class="titulo_inicio">Bienvenida a Nuestra Colección de Arte</h1>
+    <main>
+        <section class="introduccion">
+            <p>Esta galería ofrece más que una colección de obras maestras. Es una sinfonía visual, 
+				donde cada pieza toca una nota distinta dentro de la gran partitura de la historia del arte. <br>
+				Unidas, estas cuatro obras nos hablan del alma humana: de su búsqueda de sentido, de su deseo de 
+				comprender el mundo, de su capacidad de asombro y de su necesidad de expresarse.
+				Contemplar estas pinturas juntas no solo es un privilegio, es una lección. <br>
+				Nos recuerdan que, aunque separados por siglos y estilos, los grandes artistas comparten algo esencial: 
+				la capacidad de conmover, de desafiar, y de permanecer. <br> Estas obras no solo representan el arte; 
+				son el arte, en su forma más pura y eterna.<br>
+			Desde las cavernas en los inicios del tiempo, hasta las obras digitales de la edad moderna.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Galería de Arte. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
